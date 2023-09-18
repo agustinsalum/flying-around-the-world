@@ -1,0 +1,206 @@
+/* https://fonts.google.com/specimen/Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@200&display=swap');
+
+@media (min-width:320px) {
+
+    /* smartphones, iPhone, portrait 480x320 phones */
+    header {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    article {
+        background: #30a597;
+        color: rgb(214, 18, 18);
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 500px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    footer {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        border: 1px solid black;
+    }
+}
+
+@media (min-width:481px) {
+
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    header {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    article {
+        background: #30a597;
+        color: rgb(214, 18, 18);
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 500px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    footer {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        border: 1px solid black;
+    }
+}
+
+@media (min-width:641px) {
+
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    header {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    article {
+        background: #30a597;
+        color: rgb(214, 18, 18);
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 500px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    footer {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        border: 1px solid black;
+    }
+}
+
+@media (min-width:961px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    header {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    article {
+        background: #30a597;
+        color: rgb(214, 18, 18);
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 500px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    footer {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        border: 1px solid black;
+    }
+}
+
+@media (min-width:1025px) {
+
+    /* big landscape tablets, laptops, and desktops */
+    header {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    article {
+        background: #30a597;
+        color: rgb(214, 18, 18);
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 500px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    footer {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        border: 1px solid black;
+    }
+}
+
+@media (min-width:1281px) {
+
+    /* hi-res laptops and desktops */
+    header {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    article {
+        background: #30a597;
+        color: rgb(214, 18, 18);
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 500px;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    footer {
+        background: #ced6d5;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        height: 70px;
+        width: 100%;
+        border: 1px solid black;
+    }
+}
