@@ -5,6 +5,9 @@
 @media (min-width:320px) {
 
   /* smartphones, iPhone, portrait 480x320 phones */
+
+  /* header */
+
   header {
     background: #87bdd8;
     color: black;
@@ -46,29 +49,77 @@
     background-color: #0daaaa;
   }
 
-  article {
+  /* main */
+
+  main {
     background: #87bdd8;
-    color: rgb(214, 18, 18);
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
+    color: rgb(0, 0, 0);
     height: 500px;
     width: 100%;
     border: 1px solid #87bdd8;
   }
 
+  .welcome {
+    margin-left: 40%;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  /* article */
+
+  article {
+    background: #87bdd8;
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    height: 350px;
+    width: 40%;
+    border: 1px solid #87bdd8;
+    position: absolute;
+  }
+
+  .image-1 {
+    width: 350px;
+    height: 350px;
+    position: sticky;
+  }
+
+  /* aside */
+
+  aside {
+    background: #87bdd8;
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    height: 400px;
+    width: 60%;
+    border: 1px solid #87bdd8;
+    position: sticky;
+    float: right;
+
+  }
+
+  .p2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+
+  /* footer */
+
   footer {
     background: #87bdd8;
     color: black;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Times New Roman", Times, serif;
     text-align: center;
     height: 70px;
     width: 100%;
     border: 1px solid #87bdd8;
   }
 
-  .p1{
+  .p1 {
     font-family: "Times New Roman", Times, serif;
   }
+
+
 }
 
 @media (min-width:481px) {
