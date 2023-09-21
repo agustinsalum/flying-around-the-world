@@ -1,355 +1,102 @@
 /* https://fonts.google.com/specimen/Oswald */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
 
 @media (min-width:320px) {
 
-    /* smartphones, iPhone, portrait 480x320 phones */
-    header {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 40px;
-        width: 100%;
-        border: 1px solid black;
-    }
+  /* smartphones, iPhone, portrait 480x320 phones */
+  header {
+    background: #87bdd8;
+    color: black;
+    font-family: 'Croissant One', cursive;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #87bdd8;
+  }
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #b3bdbc;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 8px;
-        text-decoration: none;
-      }
-      
-      li a:hover {
-        background-color: #788382;
-      }
+  .menu {
+    text-align: center;
+  }
 
+  .menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    zoom: 1;
 
-    article {
-        background: #30a597;
-        color: rgb(214, 18, 18);
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 500px;
-        width: 100%;
-        border: 1px solid black;
-    }
+  }
 
-    footer {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 70px;
-        width: 100%;
-        border: 1px solid black;
-    }
+  .menu li {
+    float: left;
+    padding: 0px 25px;
+  }
+
+  .menu a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: x-large;
+    text-decoration: underline;
+  }
+
+  .menu a:hover {
+    background-color: #0daaaa;
+  }
+
+  article {
+    background: #87bdd8;
+    color: rgb(214, 18, 18);
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    border: 1px solid #87bdd8;
+  }
+
+  footer {
+    background: #87bdd8;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #87bdd8;
+  }
+
+  .p1{
+    font-family: "Times New Roman", Times, serif;
+  }
 }
 
 @media (min-width:481px) {
 
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-    header {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 40px;
-        width: 100%;
-        border: 1px solid black;
-    }
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #b3bdbc;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 8px;
-        text-decoration: none;
-      }
-      
-      li a:hover {
-        background-color: #788382;
-      }
-
-
-    article {
-        background: #30a597;
-        color: rgb(214, 18, 18);
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 500px;
-        width: 100%;
-        border: 1px solid black;
-    }
-
-    footer {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 70px;
-        width: 100%;
-        border: 1px solid black;
-    }
 }
 
 @media (min-width:641px) {
 
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-    header {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 40px;
-        width: 100%;
-        border: 1px solid black;
-    }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #b3bdbc;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 8px;
-        text-decoration: none;
-      }
-      
-      li a:hover {
-        background-color: #788382;
-      }
-
-
-    article {
-        background: #30a597;
-        color: rgb(214, 18, 18);
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 500px;
-        width: 100%;
-        border: 1px solid black;
-    }
-
-    footer {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 70px;
-        width: 100%;
-        border: 1px solid black;
-    }
 }
 
 @media (min-width:961px) {
 
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-    header {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 40px;
-        width: 100%;
-        border: 1px solid black;
-    }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #b3bdbc;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 8px;
-        text-decoration: none;
-      }
-      
-      li a:hover {
-        background-color: #788382;
-      }
-
-
-    article {
-        background: #30a597;
-        color: rgb(214, 18, 18);
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 500px;
-        width: 100%;
-        border: 1px solid black;
-    }
-
-    footer {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 70px;
-        width: 100%;
-        border: 1px solid black;
-    }
 }
 
 @media (min-width:1025px) {
 
-    /* big landscape tablets, laptops, and desktops */
-    header {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 40px;
-        width: 100%;
-        border: 1px solid black;
-    }
+  /* big landscape tablets, laptops, and desktops */
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #b3bdbc;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 8px;
-        text-decoration: none;
-      }
-      
-      li a:hover {
-        background-color: #788382;
-      }
-
-
-    article {
-        background: #30a597;
-        color: rgb(214, 18, 18);
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 500px;
-        width: 100%;
-        border: 1px solid black;
-    }
-
-    footer {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 70px;
-        width: 100%;
-        border: 1px solid black;
-    }
 }
 
 @media (min-width:1281px) {
 
-    /* hi-res laptops and desktops */
-    header {
-        background: #b3bdbc;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 40px;
-        width: 100%;
-        border: 1px solid black;
-    }
+  /* hi-res laptops and desktops */
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #b3bdbc;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 8px;
-        text-decoration: none;
-      }
-      
-      li a:hover {
-        background-color: #788382;
-      }
-
-    article {
-        background: #30a597;
-        color: rgb(214, 18, 18);
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 500px;
-        width: 100%;
-        border: 1px solid black;
-    }
-
-    footer {
-        background: #ced6d5;
-        color: black;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        height: 70px;
-        width: 100%;
-        border: 1px solid black;
-    }
 }
