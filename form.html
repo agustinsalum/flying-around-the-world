@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/form.css" type="text/css">
+    <title>Viajes</title>
+</head>
+
+<body>
+    <header>
+        <!-- header -->
+        <div class="menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#">Viajes</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="./form.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <br>
+        <h1 class="welcome"> Formulario </h1>
+        <br>
+        <article>
+            <!-- article -->
+            <form id="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div id="mensaje-enviado" class="hidden">Mensaje enviado con éxito</div>
+
+        </article>
+    </main>
+    <footer>
+        <!-- footer -->
+        <p class="p1"> Volar por el mundo - 2023 - CodoAcodo </p>
+    </footer>
+    <!-- javascript -->
+     <script type="text/javascript" src="assets/js/form.js"></script>
+</body>
+
+</html>
