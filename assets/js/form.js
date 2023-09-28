@@ -16,8 +16,8 @@ function sendMail() {
     };
 
     // Deben ingresar el serviceID y templateID
-    const serviceID = 'service_yxvpl47';
-    const templateID = 'template_8ldfder';
+    const serviceID = '';
+    const templateID = '';
 
     emailjs.send(serviceID, templateID, params).then(function (res) {
         document.getElementById("name").value = "";
