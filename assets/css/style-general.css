@@ -1,8 +1,5 @@
 /* https://fonts.google.com/specimen/Oswald */
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-@import url(mobile.css);
-@import url(tablet.css);
-@import url(notebook.css);
 
 * {
   margin: 0;
