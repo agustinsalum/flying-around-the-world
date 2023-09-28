@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="assets/css/mobile.css" type="text/css">
     <link rel="stylesheet" href="assets/css/tablet.css" type="text/css">
     <link rel="stylesheet" href="assets/css/notebook.css" type="text/css">
-
+    <!-- envio formulario -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("13c2jzh7zGyBVsWti");
+        })();
+    </script>
     <title>Viajes</title>
 </head>
 
@@ -27,28 +34,18 @@
     </header>
     <main>
         <br>
-        <h1 class="welcome"> Bienvenido </h1>
+        <h1 class="welcome"> Personas </h1>
         <br>
         <article>
             <!-- article -->
-            <img src="assets/images/photo-1.jpg" alt="fly welcome" class="image-1">
         </article>
-        <aside>
-            <!-- aside -->
-            <div class="message-left">
-                <p class="p2"> En nuestro sitio web de viajes, no solo te ofrecemos información detallada sobre los
-                    destinos
-                    más emblemáticos del mundo, sino que también te inspiraremos a explorar lugares menos conocidos.
-                </p>
-            </div>
-        </aside>
     </main>
     <footer>
         <!-- footer -->
         <p class="p1"> Volar por el mundo - 2023 - CodoAcodo </p>
     </footer>
     <!-- javascript -->
-    <!--  <script type="text/javascript" src="script.js"></script> -->
+    <script type="text/javascript" src="assets/js/api.js"></script>
 </body>
 
 </html>
