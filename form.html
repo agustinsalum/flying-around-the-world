@@ -7,6 +7,13 @@
     <!-- css file -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="assets/css/form.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("13c2jzh7zGyBVsWti");
+        })();
+    </script>
     <title>Viajes</title>
 </head>
 
@@ -29,19 +36,17 @@
         <article>
             <!-- article -->
             <form id="contact-form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <label for="message">Mensaje:</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button class="btn btn-primary" onclick="sendMail()">Enviar</button>
             </form>
-
-            <div id="mensaje-enviado" class="hidden">Mensaje enviado con éxito</div>
 
         </article>
     </main>
@@ -50,7 +55,7 @@
         <p class="p1"> Volar por el mundo - 2023 - CodoAcodo </p>
     </footer>
     <!-- javascript -->
-     <script type="text/javascript" src="assets/js/form.js"></script>
+    <script type="text/javascript" src="assets/js/form.js"></script>
 </body>
 
 </html>
