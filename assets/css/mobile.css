@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
 
-@media (min-width:320px) {
+@media screen and (max-width: 768px) {
 
   /* smartphones, iPhone, portrait 480x320 phones */
 
@@ -10,7 +10,8 @@
 
   header {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
     background: #87bdd8;
     color: black;
     font-family: 'Croissant One', cursive;
@@ -102,6 +103,11 @@
     float: right;
     position: sticky;
 
+  }
+
+  .message-left {
+    height: 88%;
+    width: 100%
   }
 
   .p2 {

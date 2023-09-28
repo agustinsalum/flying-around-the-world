@@ -1,6 +1,13 @@
-form {
-    max-width: 400px;
-    margin: 0 auto;
+/* https://fonts.google.com/specimen/Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url(mobile.css);
+@import url(tablet.css);
+@import url(notebook.css);
+
+.form {
+    height: 310px;
+    width: 100%;
+    
 }
 
 label {
@@ -14,13 +21,13 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
 }
 
 button {
     display: block;
-    width: 100%;
+    width: 20%;
     padding: 10px;
     margin-top: 10px;
     background-color: #007bff;
@@ -28,11 +35,6 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#mensaje-enviado {
-    color: #4CAF50;
-    font-weight: bold;
 }
 
 .hidden {

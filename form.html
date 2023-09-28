@@ -23,7 +23,7 @@
         <div class="menu">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#">Viajes</a></li>
+                <li><a href="#">Personas</a></li>
                 <li><a href="#">Quienes somos</a></li>
                 <li><a href="./form.html">Contacto</a></li>
             </ul>
@@ -35,19 +35,20 @@
         <br>
         <article>
             <!-- article -->
-            <form id="contact-form">
-                <label for="name">Nombre:</label>
-                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
+            <div class="form">
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
 
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
 
-                <label for="message">Mensaje:</label>
-                <textarea class="form-control" id="message" rows="4" required></textarea>
+                    <label for="message">Mensaje:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
 
-                <button class="btn btn-primary" onclick="sendMail()">Enviar</button>
-            </form>
-
+                    <button class="btn btn-primary" onclick="sendMail()">Enviar</button>
+                </form>
+            </div>
         </article>
     </main>
     <footer>
