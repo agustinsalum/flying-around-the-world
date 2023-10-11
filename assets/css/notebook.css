@@ -57,6 +57,40 @@
     height: 550px;
   }
 
+  .imagenes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 530px;
+ }
+.fly1{
+  width: 350px;
+  height: 350px;
+  margin-left: 50px;
+  transition: transform 1.5s ease;
+}
+.fly1:hover{
+  transform: translate(50px , 50px);
+}
+.fly2{
+  width: 350px;
+  height: 350px;
+  transition: transform 1.5s ease;
+}
+.fly2:hover{
+  transform: translate(50px , 50px);
+}
+.fly3{
+  width: 350px;
+  height: 350px;
+ margin-right: 50px;
+ transition: transform 1.5s ease;
+}
+.fly3:hover{
+  transform: translate(50px , 50px);
+}
+
   /* aside */
 
   aside {
