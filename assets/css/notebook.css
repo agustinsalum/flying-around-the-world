@@ -54,17 +54,29 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 550px;
+    height: 100%;
   }
 
   .imagenes{
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 530px;
+    height: 550px;
  }
-.fly1{
+ .imagenes img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: .7s ease;
+ }
+ .imagenes img:hover{
+  width: 650px;
+  opacity: 1;
+  filter: brightness(130%);
+ }
+/*.fly1{
   width: 350px;
   height: 350px;
   margin-left: 50px;
@@ -89,7 +101,7 @@
 }
 .fly3:hover{
   transform: translate(50px , 50px);
-}
+}*/
 
   /* aside */
 
