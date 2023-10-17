@@ -1,52 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css files -->
-    <link rel="stylesheet" href="assets/css/mobile.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/tablet.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/notebook.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/mobile.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/tablet.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/notebook.css" type="text/css" />
+    
 
     <title>Viajes</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- header -->
+      <!-- header -->
 
-        <div class="menu-toggle" id="mobile-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
 
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./flights.html">Vuelos</a></li>
-                <li><a href="./about_us.html">Quienes somos</a></li>
-                <li><a href="./form.html">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./flights.html">Vuelos</a></li>
+          <li><a href="./about_us.html">Quienes somos</a></li>
+          <li><a href="./form.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <!-- Main -->
+      <!-- Main -->
+      <h1>Encontra todas nuestras ofertas de vuelo</h1>
+      <p>Si estas pensando en viajar, conoce los destinos mas buscados</p>
+   
+    <div class="contenedor_tarjetas">
 
-        <div class="imagenes">
-            <img src="/assets/images/bariloche.jpg" alt="fly.b" class="fly1">
-            <img src="/assets/images/cordoba.jpg" alt="fly.c" class="fly2">
-            <img src="/assets/images/misiones.jpg" alt="fly.m" class="fly3">
-            <img src="/assets/images/bs.as.jpg" alt="fly.bs" class="fly4">
-            <img src="/assets/images/jujuy.jpg" alt="fly.j" class="fly5">
+         <div class="tarjeta">
+          <div class="tarjeta-contenido">
+            <div class="tarjeta-front">
+              <img src="/assets/images/bariloche.jpg" alt="Imagen de ejemplo" />
+            </div>
+            <div class="tarjeta-back">
+              <h3>Hotel Llao Llao</h3>
+              <p>Dentro de la ciudad de Bariloche podes encontrar no solo grandes espacios verdes, sino que tambien uno de los hoteles mas importantes de Argentina y de LatinoAmerica. 
+                Si tu destino es Bariloche, no podes dejar de visitar este magnifico hotel y tomar un buen cafe observando la naturaleza </p>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5198371313277!2d-71.53615300436451!3d-41.057628352409424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a886f9dea0175%3A0x3a42b93d77aef41f!2sLlao%20Llao%20Hotel%20%26%20Resort!5e0!3m2!1ses-419!2sar!4v1697557852102!5m2!1ses-419!2sar" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     
+            </div>
+            </div>
+          </div>
+        
+        
+        <div class="tarjeta">
+          <div class="tarjeta-contenido">
+            <div class="tarjeta-front">
+              <img src="/assets/images/cordoba.jpg" alt="Imagen de ejemplo" />
+            </div>
+            <div class="tarjeta-back">
+              <h3>Fiesta de la Cerveza</h3>
+              <p>Cordoba no solo es la capital del cuarteto, sino tambien de la cerveza! Si tenes pensado visitar o vacacionar en Cordoba, no te podes perder la fiesta de la cerveza! Te dejamos la ubicacion para que no te la pierdas</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.4148875781248!2d-64.56093792270303!3d-31.976766723567824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b0438839389b%3A0x8da71920e31b41d!2sAntiguo%20predio%20de%20la%20Fiesta%20Nacional%20de%20la%20Cerveza!5e0!3m2!1ses-419!2sar!4v1697559721771!5m2!1ses-419!2sar" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-contenido">
+            <div class="tarjeta-front">
+              <img src="/assets/images/misiones.jpg" alt="Imagen de ejemplo" />
+            </div>
+            <div class="tarjeta-back">
+              <h3>Las Cataratas del Iguazo</h3>
+              <p>Misiones, ciudad de la tierra roja por su alto contenido en hierro, no solo tiene un clima ideal para los amantes de las aventuras, sino que ademas tiene una de las 7 maravillas del mundo.</p>
+              <p>Te dejamos a continuacion un link para que puedas visitarlas</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7192.279639950747!2d-54.459742644982654!3d-25.66665940640245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6ea6068b8edff%3A0xa7f4a990535e7279!2sCataratas%20del%20Iguaz%C3%BA%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1697559762242!5m2!1ses-419!2sar" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-contenido">
+            <div class="tarjeta-front">
+              <img src="/assets/images/bs.as.jpg" alt="Imagen de ejemplo" />
+            </div>
+            <div class="tarjeta-back">
+              <h3>La Ciudad de Buenos Aires</h3>
+              <p>Si venis de otra parte del mundo, o viajas desde el interior, no podes dejar de visitar una de las ciudades por excelencia, MAS LINDAS DEL MUNDO.</p>
+              <p>En Buenos Aires, no solo encontraras grandes monumentos como el Obelisco, sino tambien Tango, Futbol y mucho mas!</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888186252!2d-58.38414532262891!3d-34.60373445750188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1697559782844!5m2!1ses-419!2sar" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <div class="tarjeta-contenido">
+            <div class="tarjeta-front">
+              <img src="/assets/images/jujuy.jpg" alt="Imagen de ejemplo" />
+            </div>
+            <div class="tarjeta-back">
+               <h3>La Ciudad de Jujuy</h3>
+              <p>Si estas pensando en ir a comer las mejores empanadas, no podes dejar de visitar la maravillosa ciudad de Jujuy! No solo encontraras un excelente clima de montaña, sino tambien uno de los centros de mineria mas importantes del pais</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938837.0127094846!2d-66.34124435422272!3d-23.194565464715556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404a1f6e75c0087%3A0x815e91b230ce4e79!2sJujuy!5e0!3m2!1ses-419!2sar!4v1697559822481!5m2!1ses-419!2sar" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      
+    </div>  
     </main>
     <footer>
-        <!-- footer -->
-        <p> Volar por el mundo - 2023 - CodoAcodo </p>
+      <!-- footer -->
+      <p>Volar por el mundo - 2023 - CodoAcodo</p>
     </footer>
     <script type="text/javascript" src="assets/js/hamburger.js"></script>
-</body>
-
+  </body>
 </html>

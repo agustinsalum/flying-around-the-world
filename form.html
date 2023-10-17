@@ -18,64 +18,62 @@
     </script>
     <title>Viajes</title>
 </head>
-
 <body>
-    <header>
-        <!-- header -->
-        <!-- header -->
+  <header>
+      <!-- header -->
+      <!-- header -->
 
-        <div class="menu-toggle" id="mobile-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+      <div class="menu-toggle" id="mobile-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+
+      <nav class="nav-menu">
+          <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./flights.html">Vuelos</a></li>
+              <li><a href="./about_us.html">Quienes somos</a></li>
+              <li><a href="./form.html">Contacto</a></li>
+          </ul>
+      </nav>
+  </header>
+    <main>
+      <!-- Main -->
+      <h1>Encontra todas nuestras ofertas de vuelo</h1>
+      <p>Si estas pensando en viajar, dejanos tus datos y un asesor se contactara a la brevedad para ayudarte a elegir tu proximo destino</p> <article>
+        <!-- article -->
+        <div class="img_contact">
+         <img src="/assets/images/personas.jpg" alt="Nombre de la persona">
+
+        </div>
+        <div class="form">
+            <form action="">
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
+
+                <label for="email">Telefono:</label>
+                <input type="email" class="form-control" id="telefono" placeholder="Ingrese su telefono" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar" onclick="sendMail()">
+            </form>
         </div>
 
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./flights.html">Vuelos</a></li>
-                <li><a href="./about_us.html">Quienes somos</a></li>
-                <li><a href="./form.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- main -->
-        <div class="conteiner">
-            <!-- div container -->
-            <aside>
-                <!-- aside -->
-                <img id="image-aside" src="assets/images/photo-1.jpg" alt="fly-welcome">
-
-            </aside>
-            <article>
-                <!-- article -->
-                <div class="form">
-                    <form action="">
-                        <label for="name">Nombre:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
-
-                        <label for="message">Mensaje:</label>
-                        <textarea class="form-control" id="message" rows="4" required></textarea>
-
-                        <input type="submit" value="Enviar" onclick="sendMail()">
-                    </form>
-                </div>
-
-            </article>
-            <div>
-    </main>
+    </article>
     <footer>
-        <!-- footer -->
-        <p>Volar por el mundo - 2023 - CodoAcodo</p>
+      <!-- footer -->
+      <p>Volar por el mundo - 2023 - CodoAcodo</p>
 
-    </footer>
-    <!-- javascript -->
-    <script type="text/javascript" src="assets/js/form.js"></script>
-    <script type="text/javascript" src="assets/js/hamburger.js"></script>
+  </footer>
+  <!-- javascript -->
+  <script type="text/javascript" src="assets/js/form.js"></script>
+  <script type="text/javascript" src="assets/js/hamburger.js"></script>
 </body>
 
 </html>

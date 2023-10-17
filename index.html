@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/mobile.css" type="text/css">
     <link rel="stylesheet" href="assets/css/tablet.css" type="text/css">
     <link rel="stylesheet" href="assets/css/notebook.css" type="text/css">
+    <link rel="stylesheet" href="/assets/js/buscador.js">
+
 
     <title>Viajes</title>
 </head>
@@ -28,28 +30,63 @@
                 <li><a href="./flights.html">Vuelos</a></li>
                 <li><a href="./about_us.html">Quienes somos</a></li>
                 <li><a href="./form.html">Contacto</a></li>
+                
             </ul>
         </nav>
     </header>
     <main>
         <!-- Main -->
         <div class="conteiner">
-            <!-- div conteniner -->
-            <aside>
-                <!-- aside -->
-                <img id="image-aside" src="assets/images/photo-1.jpg" alt="fly-welcome">
-            </aside>
+               <h1>Bienvenido a Volando-Ando!</h1><br>
+                    
+           
+        </div>
+         <!-- Buscador -->
+      <div class="buscador">
+        <h1>Encuentra tus vuelos y hoteles</h1>
+        <div class="opciones">
+          <div class="opcion">
+            <img src="/assets/images/pack.jpg" alt="Icono Avión" />
+            <p>Vuelo + Hotel</p>
+          </div>
+          <div class="opcion">
+            <img src="/assets/images/hotel.jpg" alt="Icono Hotel" />
+            <p>Hoteles</p>
+          </div>
+          <div class="opcion">
+            <img src="/assets/images/avion.png" alt="Icono Avión" />
+            <p>Vuelos</p>
+          </div>
+        </div>
+        <!-- formulario -->
+        <!-- ... tu HTML existente ... -->
 
-            <article>
-                <!-- article -->
-                <div class="welcome">
-                    <h1>Bienvenido a nuestro Sitio de viajes</h1><br>
-                    <p> En nuestro sitio web de viajes, no solo te ofrecemos información detallada
-                        sobre los destinos más emblemáticos del mundo, sino que también te
-                        inspiraremos a explorar lugares menos conocidos. </p>
-                </div>
+        <div class="formulario">
+            <input type="text" placeholder="Destino">
+            <label for="fecha-partida">Fecha de partida:</label>
+            <input type="date" id="fecha-partida">
+            <input type="number" placeholder="Número de pasajeros" min="0" max="10" id="num-pasajeros">
+            <button>Buscar</button>
+        </div>
 
-            </article>
+        <!-- Buscador -->
+        <div class="destinos">
+          <h3>Destinos populares:</h3>
+          <ul>
+            <li>New York</li>
+            <li>Paris</li>
+            <li>Tokyo</li>
+            <li>London</li>
+            <li>Miami</li>
+          </ul>
+        </div>
+      </div>
+        <div class="imagenes">
+            <img src="/assets/images/bariloche.jpg" alt="fly.b" class="fly1">
+            <img src="/assets/images/cordoba.jpg" alt="fly.c" class="fly2">
+            <img src="/assets/images/misiones.jpg" alt="fly.m" class="fly3">
+            <img src="/assets/images/bs.as.jpg" alt="fly.bs" class="fly4">
+            <img src="/assets/images/jujuy.jpg" alt="fly.j" class="fly5">
         </div>
     </main>
     <footer>
@@ -57,6 +94,9 @@
         <p> Volar por el mundo - 2023 - CodoAcodo </p>
     </footer>
     <script type="text/javascript" src="assets/js/hamburger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+    
 </body>
 
 </html>
