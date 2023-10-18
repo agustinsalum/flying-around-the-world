@@ -21,6 +21,11 @@
         background-color: rgb(31, 26, 26);
     }
 
+    .menu-clicked {
+        background-color: #008080
+    }
+    
+
     .bar {
         display: block;
         width: 25px;
