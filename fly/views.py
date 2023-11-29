@@ -1,14 +1,14 @@
 
 from django.views.generic import TemplateView
 
-class ViajesIndexViews(TemplateView):
+class FlyIndexViews(TemplateView):
     template_name = 'index.html'
 
-class ViajesFormViews(TemplateView):
+class FlyFormViews(TemplateView):
     template_name = 'form.html'
 
-class ViajesFlightsViews(TemplateView):
+class FlyFlightsViews(TemplateView):
     template_name = 'flights.html'
 
-class ViajesAboutUsViews(TemplateView):
+class FlyAboutUsViews(TemplateView):
     template_name = 'about_us.html'
