@@ -1,53 +1,20 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% block content %}
+<main>
+    <!-- Main -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css files -->
-    <link rel="stylesheet" href="{% static '/assets/css/mobile.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static '/assets/css/tablet.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static '/assets/css/notebook.css' %}" type="text/css">
+    <div class="imagenes">
+        <img src="{% static 'assets/images/bariloche.jpg' %}" alt="fly.b" class="fly1">
+        <img src="{% static 'assets/images/cordoba.jpg' %}" alt="fly.c" class="fly2">
+        <img src="{% static 'assets/images/misiones.jpg' %}" alt="fly.m" class="fly3">
+        <img src="{% static 'assets/images/bs.as.jpg' %}" alt="fly.bs" class="fly4">
+        <img src="{% static 'assets/images/jujuy.jpg' %}" alt="fly.j" class="fly5">
+    </div>
+</main>
 
-    <title>Viajes</title>
-</head>
-
-<body>
-    <header>
-        <!-- header -->
-
-        <div class="menu-toggle" id="mobile-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./flights.html">Vuelos</a></li>
-                <li><a href="./about_us.html">Quienes somos</a></li>
-                <li><a href="./form.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Main -->
-
-        <div class="imagenes">
-            <img src="{% static 'assets/images/bariloche.jpg' %}" alt="fly.b" class="fly1">
-            <img src="{% static 'assets/images/cordoba.jpg' %}" alt="fly.c" class="fly2">
-            <img src="{% static 'assets/images/misiones.jpg' %}" alt="fly.m" class="fly3">
-            <img src="{% static 'assets/images/bs.as.jpg' %}" alt="fly.bs" class="fly4">
-            <img src="{% static 'assets/images/jujuy.jpg' %}" alt="fly.j" class="fly5">
-        </div>
-    </main>
-    <footer>
-        <!-- footer -->
-        <p> Volar por el mundo - 2023 - CodoAcodo </p>
-    </footer>
-    <script type="text/javascript" src="{% static 'assets/js/hamburger.js' %}"></script>
+<!-- javascript -->
+{% endblock %}
 </body>
 
 </html>

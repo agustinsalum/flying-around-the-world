@@ -1,63 +1,30 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% block content %}
+<main>
+    <!-- Main -->
+    <div class="conteiner">
+        <!-- div conteniner -->
+        <aside>
+            <!-- aside -->
+            <img id="image-aside" src="{% static '/assets/images/photo-1.jpg' %}" alt="fly-welcome">
+        </aside>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css files -->
-    <link rel="stylesheet" href="{% static '/assets/css/mobile.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static '/assets/css/tablet.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static '/assets/css/notebook.css' %}" type="text/css">
+        <article>
+            <!-- article -->
+            <div class="welcome">
+                <h1>Bienvenido a nuestro Sitio de viajes</h1><br>
+                <p> En nuestro sitio web de viajes, no solo te ofrecemos información detallada
+                    sobre los destinos más emblemáticos del mundo, sino que también te
+                    inspiraremos a explorar lugares menos conocidos. </p>
+            </div>
 
-    <title>Viajes</title>
-</head>
+        </article>
+    </div>
+</main>
+<!-- javascript -->
+{% endblock %}
 
-<body>
-    <header>
-        <!-- header -->
-
-        <div class="menu-toggle" id="mobile-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./flights.html">Vuelos</a></li>
-                <li><a href="./about_us.html">Quienes somos</a></li>
-                <li><a href="./form.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Main -->
-        <div class="conteiner">
-            <!-- div conteniner -->
-            <aside>
-                <!-- aside -->
-                <img id="image-aside" src="{% static '/assets/images/photo-1.jpg' %}" alt="fly-welcome">
-            </aside>
-
-            <article>
-                <!-- article -->
-                <div class="welcome">
-                    <h1>Bienvenido a nuestro Sitio de viajes</h1><br>
-                    <p> En nuestro sitio web de viajes, no solo te ofrecemos información detallada
-                        sobre los destinos más emblemáticos del mundo, sino que también te
-                        inspiraremos a explorar lugares menos conocidos. </p>
-                </div>
-
-            </article>
-        </div>
-    </main>
-    <footer>
-        <!-- footer -->
-        <p> Volar por el mundo - 2023 - CodoAcodo </p>
-    </footer>
-    <script type="text/javascript" src="{% static '/assets/js/hamburger.js' %}"></script>
 </body>
 
 </html>

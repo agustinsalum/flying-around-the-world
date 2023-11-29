@@ -1,82 +1,47 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% block content %}
+<!-- envio formulario -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("13c2jzh7zGyBVsWti");
+    })();
+</script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css files -->
-    <link rel="stylesheet" href="{% static '/assets/css/mobile.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static '/assets/css/tablet.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static '/assets/css/notebook.css' %}" type="text/css">
-    <!-- envio formulario -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("13c2jzh7zGyBVsWti");
-        })();
-    </script>
-    <title>Viajes</title>
-</head>
+<main>
+    <!-- main -->
+    <div class="conteiner">
+        <!-- div container -->
+        <aside>
+            <!-- aside -->
+            <img id="image-aside" src="{% static 'assets/images/photo-1.jpg' %}" alt="fly-welcome">
 
-<body>
-    <header>
-        <!-- header -->
-        <!-- header -->
+        </aside>
+        <article>
+            <!-- article -->
+            <div class="form">
+                <form action="">
+                    <label for="name">Nombre:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
 
-        <div class="menu-toggle" id="mobile-menu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
 
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./flights.html">Vuelos</a></li>
-                <li><a href="./about_us.html">Quienes somos</a></li>
-                <li><a href="./form.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- main -->
-        <div class="conteiner">
-            <!-- div container -->
-            <aside>
-                <!-- aside -->
-                <img id="image-aside" src="{% static 'assets/images/photo-1.jpg' %}" alt="fly-welcome">
+                    <label for="message">Mensaje:</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
 
-            </aside>
-            <article>
-                <!-- article -->
-                <div class="form">
-                    <form action="">
-                        <label for="name">Nombre:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required>
+                    <input type="submit" value="Enviar" onclick="sendMail()">
+                </form>
+            </div>
 
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
-
-                        <label for="message">Mensaje:</label>
-                        <textarea class="form-control" id="message" rows="4" required></textarea>
-
-                        <input type="submit" value="Enviar" onclick="sendMail()">
-                    </form>
-                </div>
-
-            </article>
-            <div>
-    </main>
-    <footer>
-        <!-- footer -->
-        <p>Volar por el mundo - 2023 - CodoAcodo</p>
-
-    </footer>
-    <!-- javascript -->
-    <script type="text/javascript" src="{% static 'assets/js/form.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/hamburger.js' %}"></script>
+        </article>
+        <div>
+</main>
+<!-- javascript -->
+<script type="text/javascript" src="{% static 'assets/js/form.js' %}"></script>
+{% endblock %}
 </body>
 
 </html>
