@@ -66,5 +66,5 @@ El objetivo de este trabajo práctico es desarrollar una aplicación web que uti
 3. Sube el frontend a un hosting, por ejemplo, Netlify o GitHub Pages, siempre y cuando se realice en forma de microservicios.
 
 ## Contacto
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de [correo electrónico](agustinsalum92@hotmail.com).
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi correo electronico
 
