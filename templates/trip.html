@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <!-- Main -->
+    <div class="conteiner">
+        <!-- div conteniner -->
+        <aside>
+            <!-- aside -->
+            <img id="image-aside" src="{% static '/assets/images/photo-1.jpg' %}" alt="fly-welcome">
+        </aside>
+
+        <article>
+            <!-- article -->
+            <div class="welcome">
+                <h1>Todos los Vijes</h1>
+                <h2><a href="{% url 'trip:create' %}">CREAR Viaje</a></h2>
+                {% for trip in trip_list%}
+                <div class="list">
+                    <span>
+                        <p>{{forloop.counter}}</p>
+                    </span>
+                    <span>
+                        <p>{{trip.nombre}}</p>
+                    </span>
+                    <span>
+                        <label for="">Detalle: </label>
+                        <a href="{% url 'trip:detail' trip.id %}">+</a>
+                    </span>
+                    <span>
+                        <label for="">Editar: </label>
+                        <a href="{% url 'trip:update' trip.id %}">+</a>
+                    </span>
+                    <span>
+                        <label for="">Borrar: </label>
+                        <a href="{% url 'trip:delete' trip.id %}">+</a>
+                    </span>
+                </div>
+
+                {% endfor %}
+            </div>
+    </div>
+
+    </article>
+    </div>
+</main>
+<!-- javascript -->
+{% endblock %}
+
+</body>
+
+</html>
