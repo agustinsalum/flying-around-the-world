@@ -20,6 +20,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+apps = [
+    "flyApp"
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -28,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+INSTALLED_APPS += apps
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
