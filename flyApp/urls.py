@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path , include
-
+from api.router import router
 
 from .views import      TripListView   \
                     ,   TripDetailView \
@@ -18,3 +18,5 @@ urlpatterns = [
     path("<int:pk>/delete/", TripDeleteView.as_view(), name="delete")
 
 ]
+
+urlpatterns += router.urls
