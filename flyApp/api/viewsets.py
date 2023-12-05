@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ModelViewSet
-from .models import Trip
-from .serializers import VinoSerializer
+from ..models import Trip
+from .serializers import TripSerializer
 
 class FlyViewSet(ModelViewSet):
     queryset = Trip.objects.all()
-    serializer_class = VinoSerializer
+    serializer_class = TripSerializer

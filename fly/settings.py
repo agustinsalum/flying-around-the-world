@@ -24,6 +24,10 @@ apps = [
     "flyApp"
 ]
 
+externals = [
+    "rest_framework"
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -34,6 +38,7 @@ INSTALLED_APPS = [
 ]
 
 INSTALLED_APPS += apps
+INSTALLED_APPS += externals
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

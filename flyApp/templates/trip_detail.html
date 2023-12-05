@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<main>
+    <div>
+        <h1>{{trip.nombre}}</h1>
+        {% for label, value in trip.get_fields %}
+
+        <p>{{label | upper}}</p>
+        <p>{{value}}</p>
+
+        {% endfor %}
+
+        <a href="{% url 'trip':all' %}">BACK</a>
+    </div>
+</main>
+{% endblock %}

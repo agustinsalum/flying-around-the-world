@@ -10,5 +10,5 @@ urlpatterns = [
     path('form.html',FlyFormViews.as_view(), name = 'form'),
     path('flights.html',FlyFlightsViews.as_view(), name = 'flights'),
     path('about_us.html',FlyAboutUsViews.as_view(), name = 'abouts_us'),
-    path("trip/", include("flyApp.urls")),
+    path("trips/", include("flyApp.urls")),
 ]

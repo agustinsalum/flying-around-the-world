@@ -16,36 +16,35 @@ from .models import Trip
 # Create your views here.
 
 
-class TripBaseView(View):
+class TripsBaseView(View):
     template_name = 'trip.html'
     model = Trip
     fields = '__all__'
     success_url = reverse_lazy('trip:all')
 
 
-class VinosListView(TripBaseView,ListView):
-    
+class TripsListView(TripsBaseView,ListView):    
     # THIS ALLOWS ME TO CREATE A VIEW WITH THE TRIPS
     pass
     
 
-class TripDetailView(TripBaseView,DetailView):
+class TripsDetailView(TripsBaseView,DetailView):
     template_name = "vino_detail.html"
 
-class TripCreateView(TripBaseView,CreateView):
+class TripsCreateView(TripsBaseView,CreateView):
     template_name = "trip_create.html"
     extra_context = {
         "type": "Create trip"
     }
 
 
-class TripUpdateView(TripBaseView,UpdateView):
+class TripUpdateView(TripsBaseView,UpdateView):
     template_name = "trip_create.html"
     extra_context = {
         "type": "Update Trip"
     }
 
-class TripDeleteView(TripBaseView,DeleteView):
+class TripDeleteView(TripsBaseView,DeleteView):
     template_name = "trip_delete.html"
     extra_context = {
         "type": "Delete trip"
