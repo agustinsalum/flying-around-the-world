@@ -158,17 +158,36 @@
     animation-duration: 3s;
     animation-name: slidein;
   }
-  
+
   @keyframes slidein {
     from {
       margin-left: 100%;
       width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
     }
+  }
+
+  /* table */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  th,
+  td {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    display: block;
   }
 
   /* footer */

@@ -27,11 +27,11 @@
 
         <nav class="nav-menu">
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./flights.html">Vuelos</a></li>
-                <li><a href="./about_us.html">Quienes somos</a></li>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'flights' %}">Imagenes</a></li>
+                <li><a href="{% url 'abouts_us' %}">Quienes somos</a></li>
                 <li><a href="{% url 'trip:all' %}">Viajes</a></li>
-                <li><a href="./form.html">Contacto</a></li>
+                <li><a href="{% url 'form' %}">Contacto</a></li>
             </ul>
         </nav>
     </header>

@@ -13,29 +13,27 @@
         <article>
             <!-- article -->
             <div class="welcome">
+                <h2><a href="{% url 'trip:create' %}">Crear viaje</a></h2>
                 <h1>Todos los Vijes</h1>
-                <h2><a href="{% url 'trip:create' %}">CREAR Viaje</a></h2>
                 {% for trip in trip_list%}
-                <div class="list">
-                    <span>
-                        <p>{{forloop.counter}}</p>
-                    </span>
-                    <span>
-                        <p>{{trip.nombre}}</p>
-                    </span>
-                    <span>
-                        <label for="">Detalle: </label>
-                        <a href="{% url 'trip:detail' trip.id %}">+</a>
-                    </span>
-                    <span>
-                        <label for="">Editar: </label>
-                        <a href="{% url 'trip:update' trip.id %}">+</a>
-                    </span>
-                    <span>
-                        <label for="">Borrar: </label>
-                        <a href="{% url 'trip:delete' trip.id %}">+</a>
-                    </span>
-                </div>
+                <table>
+                    <tr>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Fecha</th>
+                        <th>Detalles</th>
+                        <th>Modificar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                    <tr>
+                        <td><p>{{trip.destination}}</p></td>
+                        <td>{{trip.origin}}</td>
+                        <td>{{trip.date}}</td>
+                        <td><a href="{% url 'trip:detail' trip.id %}">+</a></td>
+                        <td><a href="{% url 'trip:update' trip.id %}">+</a></td>
+                        <td><a href="{% url 'trip:delete' trip.id %}">+</a></td>
+                    </tr>
+                </table>
 
                 {% endfor %}
             </div>
