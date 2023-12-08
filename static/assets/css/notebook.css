@@ -186,6 +186,12 @@
     text-align: left;
   }
 
+  .icon-table {
+    max-width: 32px;
+    height: auto;
+    width: 100%;
+  }
+  
   /* footer */
 
   footer {

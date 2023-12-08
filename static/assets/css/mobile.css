@@ -174,7 +174,11 @@
         border: 1px solid #ccc;
         padding: 8px;
         text-align: left;
-        display: block;
+    }
+
+    .icon-table {
+        max-width: 32px;
+        height: auto;
         width: 100%;
     }
 

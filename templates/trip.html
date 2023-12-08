@@ -15,7 +15,6 @@
             <div class="welcome">
                 <h2><a href="{% url 'trip:create' %}">Crear viaje</a></h2>
                 <h1>Todos los Vijes</h1>
-                {% for trip in trip_list%}
                 <table>
                     <tr>
                         <th>Origen</th>
@@ -26,16 +25,25 @@
                         <th>Eliminar</th>
                     </tr>
                     <tr>
-                        <td><p>{{trip.destination}}</p></td>
-                        <td>{{trip.origin}}</td>
-                        <td>{{trip.date}}</td>
-                        <td><a href="{% url 'trip:detail' trip.id %}">+</a></td>
-                        <td><a href="{% url 'trip:update' trip.id %}">+</a></td>
-                        <td><a href="{% url 'trip:delete' trip.id %}">+</a></td>
+                        {% for trip in trip_list%}
+                        <td>
+                            <p>{{trip.destination}}</p>
+                        </td>
+                        <td>
+                            <p>{{trip.origin}}</p>
+                        </td>
+                        <td>
+                            <p>{{trip.date}}</p>
+                        </td>
+                        <td><a href="{% url 'trip:detail' trip.id %}"><img class="icon-table"
+                                    src="{% static '/assets/images/magnifier.png' %}" alt="Trulli"></a></td>
+                        <td><a href="{% url 'trip:update' trip.id %}"><img class="icon-table"
+                                    src="{% static '/assets/images/wrench.png' %}" alt="Wrench"></a></td>
+                        <td><a href="{% url 'trip:delete' trip.id %}"><img class="icon-table"
+                            src="{% static '/assets/images/trash-1.png' %}" alt="Delete"></a></td>
                     </tr>
+                    {% endfor %}
                 </table>
-
-                {% endfor %}
             </div>
     </div>
 
