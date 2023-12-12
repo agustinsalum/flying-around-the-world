@@ -3,15 +3,12 @@
 
 <main>
     <div>
-        <h1>{{trip.nombre}}</h1>
-        {% for label, value in trip.get_fields %}
+        <h1>Detalles del viaje</h1>
+            <p> Destino: {{trip.destination}}</p>
+            <p> Origen: {{trip.origin}}</p>
+            <p> Fecha: {{trip.date}}</p>
 
-        <p>{{label | upper}}</p>
-        <p>{{value}}</p>
-
-        {% endfor %}
-
-        <a href="{% url 'trip':all' %}">Atras</a>
+        <a href="{% url 'trip:all' %}">Atras</a>
     </div>
 </main>
 {% endblock %}

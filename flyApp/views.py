@@ -29,7 +29,10 @@ class TripsListView(TripsBaseView,ListView):
     
 
 class TripsDetailView(TripsBaseView,DetailView):
-    template_name = "vino_detail.html"
+    template_name = "trip_detail.html"
+    extra_context = {
+        "type": "detail trip"
+    }
 
 class TripsCreateView(TripsBaseView,CreateView):
     template_name = "trip_create.html"
