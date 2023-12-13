@@ -30,13 +30,14 @@ Simplemente haz clic derecho en el archivo `index.html` y selecciona "Abrir con 
 ### Opción 2: Usando Live Server
 Si prefieres una experiencia más dinámica durante el desarrollo, puedes instalar la extensión Live Server en tu editor de código favorito. Luego, simplemente haz clic en "Go Live" desde tu editor y se abrirá automáticamente la página en tu navegador.
 
-¡Disfruta explorando el mundo del ajedrez en nuestro sitio!
+¡Disfruta explorando el mundo de los viajes en nuestro sitio!
 
 # viajes-backend
 
 # Trabajo Integrador Final
 
 ## Objetivo
+
 El objetivo de este trabajo práctico es desarrollar una aplicación web que utilice una API REST (ideal) o el modelo MVT en el backend y un frontend interactivo para realizar operaciones CRUD en una base de datos MySQL.
 
 ## Instrucciones
@@ -65,6 +66,85 @@ El objetivo de este trabajo práctico es desarrollar una aplicación web que uti
 
 3. Sube el frontend a un hosting, por ejemplo, Netlify o GitHub Pages, siempre y cuando se realice en forma de microservicios.
 
-## Contacto
+# Uso del Proyecto y Visualización del Despliegue (desploy)
+
+El trabajo final ha sido completado y se ha subido a la página pythonanywhere.com para su despliegue en producción. A continuación, se detallarán los pasos para ejecutar el proyecto de manera local y se proporcionará un ejemplo de cómo desplegarlo en modo producción, junto con el enlace al despliegue.
+
+## Visualización
+
+Puedes acceder al proyecto desplegado en [este enlace](https://agustinsalum.pythonanywhere.com/).
+
+## Ejecución Local
+
+1. Clona el repositorio:
+
+    ```
+    git clone https://github.com/agustinsalum/flying-around-the-world
+    ```
+
+2. Accede a la carpeta del proyecto:
+
+    ```
+    cd flying-around-the-world
+    ```
+
+3. Crea y activa un entorno virtual llamado venv:
+
+    ```
+    pip install virtualenv
+    ```
+    ```
+    virtualenv -p python venv
+    ```
+    ```
+    source venv/bin/activate
+    ```
+
+4. Instala las dependencias necesarias:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+5. Crea un archivo llamado `.env` junto a tu archivo `settings.py`
+
+   ```
+   touch .env
+   ```
+
+6. Copia el siguiente modelo en tu archivo `.env` e ingresa tus credenciales personales
+
+   ```
+   DEBUG=False
+   SECRET_KEY=
+   DATABASE_NAME=
+   DATABASE_USER=
+   DATABASE_PASSWORD=
+   DATABASE_HOST=
+   DATABASE_PORT=
+   ```
+
+7. Realiza las migraciones:
+
+    ```
+    python manage.py makemigrations
+    ```
+    ```
+    python manage.py migrate
+    ```
+
+8. Ejecuta el proyecto:
+
+    ```
+    python manage.py runserver
+    ```
+
+Estos pasos te permitirán ejecutar el proyecto en tu entorno local. Asegúrate de tener Python y pip instalados en tu sistema antes de comenzar.
+
+## Python any where
+
+PythonAnywhere es una plataforma en la nube que ofrece entornos de desarrollo y alojamiento web para aplicaciones escritas en Python. Se debera crear una cuenta y generar una api token, el mismo se encuentra en su perfil con el nombre "API TOKEN". Luego,  
+
+# Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi correo electronico
 
