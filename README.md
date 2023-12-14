@@ -143,7 +143,108 @@ Estos pasos te permitirán ejecutar el proyecto en tu entorno local. Asegúrate 
 
 ## Python any where
 
-PythonAnywhere es una plataforma en la nube que ofrece entornos de desarrollo y alojamiento web para aplicaciones escritas en Python. Se debera crear una cuenta y generar una api token, el mismo se encuentra en su perfil con el nombre "API TOKEN". Luego,  
+PythonAnywhere es una plataforma en la nube que ofrece entornos de desarrollo y alojamiento web para aplicaciones escritas en Python. Los pasos para alojar su pagina web son los siguientes:
+
+1. Se debera crear una cuenta y generar una api token, el mismo se encuentra en su perfil con el nombre "API TOKEN".
+
+2. En la pestaña "Dashboard" generar una nueva consola del tipo bash. Dentro de la consola seguir los siguientes pasos:
+
+- Generar un usuario pythonanywhere
+
+    ```
+    pip install --user pythonanywhere
+    ```
+
+- Clonar el repositorio y acceder a la carpeta
+
+    ```
+    git clone https://github.com/agustinsalum/flying-around-the-world
+    ```
+    ```
+    cd flying-around-the-world
+    ```
+
+- Instalar el entorno de trabajo
+
+    ```
+    mkvirtualenv --python=python3 venv
+    ```
+
+- Instalar las dependencias
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+4. Ir a la pestaña "web" y crear una webApp. Seleccionar la configuracion manual y elegir la version de Python de tu sistema. Luego seguir los siguientes pasos:
+
+- En source code agregar la ruta del codigo. Tip: usar el comando "pwd"
+
+    ```
+    /home/<nombreusuario>/<nombrerepositorio>
+    ```
+
+- En "virtualenv" agregar la ruta de .virtualenvs. Tip: Usar el comando "ls -la". La carpeta oculta se encuentra al lado del repositorio clonado
+
+    ```
+    /home/<nombreusuario>/.virtualenvs/venv
+    ```
+
+- En "Static files" agregar la ruta de los estaticos
+
+    ```
+    URL: static
+    Directory: /home/<nombreusuario>/<nombrerepositorio>/static
+    ```
+
+- Recargar con el boton verde "Reload"
+
+5. Abrir el archivo "<nombreusuario>_pythonanywhere_com_wsgi.py" que se encuentra en "WSGI configuration file" de Code. En nuestro caso, solamente vamos a utilizar el codigo para Django:
+
+```
+# +++++++++++ DJANGO +++++++++++
+# To use your own django app use code like this:
+import os
+import sys
+#
+## assuming your django settings file is at '/home/<nombreusuario>/mysite/mysite/settings.py'
+## and your manage.py is is at '/home/<nombreusuario>/mysite/manage.py'
+path = '/home/<nombreusuario>/<nombrerepositorio>'
+if path not in sys.path:
+    sys.path.append(path)
+
+# Carpeta start project es la que contiene el archivo settings.py
+os.environ['DJANGO_SETTINGS_MODULE'] = '<carpetastartproject>.settings'
+#
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+```
+
+6. Agrega en el settings el host
+
+```
+#ALLOWED_HOSTS = ["<nombreusuario>.pythonanywhere.com"]
+```
+
+7. Recargar con el boton verde "Reload". En caso de tener problemas al visualizar los estaticos teclear:
+
+```
+python manage.py collectstatic
+```
+
+8. Por ultimo, ir a la pestaña "database" para generar una base de datos. Para finalizar, realizar las migraciones
+
+```
+python manage.py makemigrations
+```
+```
+python manage.py migrate
+```
+
+| :warning: **Nota Importante** |
+
+<!-- Este es un comentario en un archivo README.md -->
+
 
 # Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi correo electronico
