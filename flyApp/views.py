@@ -1,8 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
-
-from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
 
@@ -12,6 +9,8 @@ from django.views.generic.detail import DetailView
 
 
 from .models import Trip
+
+from django import forms
 
 # Create your views here.
 
@@ -39,6 +38,12 @@ class TripsCreateView(TripsBaseView,CreateView):
     extra_context = {
         "type": "Create trip"
     }
+    
+    # Change text field to date for date
+    def get_form(self, form_class=None):
+        form = super().get_form(form_class)
+        form.fields['date'].widget = forms.DateInput(attrs={'type': 'date'})
+        return form
 
 
 class TripUpdateView(TripsBaseView,UpdateView):
