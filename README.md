@@ -243,8 +243,6 @@ python manage.py migrate
 
 | :warning: **Nota Importante** |
 
-<!-- Este es un comentario en un archivo README.md -->
-
 
 # Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi correo electronico
