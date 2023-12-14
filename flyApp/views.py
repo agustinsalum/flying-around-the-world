@@ -12,6 +12,8 @@ from .models import Trip
 
 from django import forms
 
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
 # Create your views here.
 
 
@@ -24,7 +26,27 @@ class TripsBaseView(View):
 
 class TripsListView(TripsBaseView,ListView):    
     # THIS ALLOWS ME TO CREATE A VIEW WITH THE TRIPS
-    pass
+    # Paginate
+    paginate_by = 3  # num pages
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        trip_list = self.get_queryset()
+        
+        paginator = Paginator(trip_list, self.paginate_by)
+        page = self.request.GET.get('page')
+        
+        try:
+            trips = paginator.page(page)
+        except PageNotAnInteger:
+            # If the page parameter is not a number, show the first page
+            trips = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), show last page of results
+            trips = paginator.page(paginator.num_pages)
+        
+        context['trip_list'] = trips
+        return context
     
 
 class TripsDetailView(TripsBaseView,DetailView):
@@ -51,6 +73,12 @@ class TripUpdateView(TripsBaseView,UpdateView):
     extra_context = {
         "type": "Update Trip"
     }
+    
+    # Change text field to date for date
+    def get_form(self, form_class=None):
+        form = super().get_form(form_class)
+        form.fields['date'].widget = forms.DateInput(attrs={'type': 'date'})
+        return form
 
 class TripDeleteView(TripsBaseView,DeleteView):
     template_name = "trip_delete.html"

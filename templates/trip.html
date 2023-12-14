@@ -40,10 +40,30 @@
                         <td><a href="{% url 'trip:update' trip.id %}"><img class="icon-table"
                                     src="{% static '/assets/images/wrench.png' %}" alt="Wrench"></a></td>
                         <td><a href="{% url 'trip:delete' trip.id %}"><img class="icon-table"
-                            src="{% static '/assets/images/trash-1.png' %}" alt="Delete"></a></td>
+                                    src="{% static '/assets/images/trash-1.png' %}" alt="Delete"></a></td>
                     </tr>
                     {% endfor %}
                 </table>
+
+                <!-- paginated -->
+
+                <div class="pagination">
+                    <span class="step-links">
+                        {% if trip_list.has_previous %}
+                        <a href="?page=1">&laquo; Primera</a>
+                        <a href="?page={{ trip_list.previous_page_number }}">Anterior</a>
+                        {% endif %}
+
+                        <span class="current">
+                            Página {{ trip_list.number }} de {{ trip_list.paginator.num_pages }}.
+                        </span>
+
+                        {% if trip_list.has_next %}
+                        <a href="?page={{ trip_list.next_page_number }}">Siguiente</a>
+                        <a href="?page={{ trip_list.paginator.num_pages }}">Última &raquo;</a>
+                        {% endif %}
+                    </span>
+                </div>
             </div>
     </div>
 
