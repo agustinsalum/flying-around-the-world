@@ -139,7 +139,7 @@ Puedes acceder al proyecto desplegado en [este enlace](https://agustinsalum.pyth
     python manage.py runserver
     ```
 
-Estos pasos te permitirán ejecutar el proyecto en tu entorno local. Asegúrate de tener Python y pip instalados en tu sistema antes de comenzar.
+> Estos pasos te permitirán ejecutar el proyecto en tu entorno local. Asegúrate de tener Python y pip instalados en tu sistema antes de comenzar.
 
 ## Python any where
 
@@ -178,17 +178,21 @@ PythonAnywhere es una plataforma en la nube que ofrece entornos de desarrollo y 
 
 4. Ir a la pestaña "web" y crear una webApp. Seleccionar la configuracion manual y elegir la version de Python de tu sistema. Luego seguir los siguientes pasos:
 
-- En source code agregar la ruta del codigo. Tip: usar el comando "pwd"
+- En source code agregar la ruta del codigo
 
     ```
     /home/<nombreusuario>/<nombrerepositorio>
     ```
 
-- En "virtualenv" agregar la ruta de .virtualenvs. Tip: Usar el comando "ls -la". La carpeta oculta se encuentra al lado del repositorio clonado
+> usar el comando "pwd"
+
+- En "virtualenv" agregar la ruta de .virtualenvs
 
     ```
     /home/<nombreusuario>/.virtualenvs/venv
     ```
+
+> Usar el comando "ls -la". La carpeta oculta se encuentra en la misma altura que el repositorio clonado
 
 - En "Static files" agregar la ruta de los estaticos
 
@@ -241,7 +245,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-| :warning: **Nota Importante** |
+> Crear el archivo .env como en los pasos de la ejecucion local, el  DEBUG debe estar en true
 
 
 # Contacto
