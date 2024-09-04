@@ -117,6 +117,7 @@ Puedes acceder al proyecto desplegado en [este enlace](https://agustinsalum.pyth
    ```
    DEBUG=False
    SECRET_KEY=
+   DATABASE_ENGINE=
    DATABASE_NAME=
    DATABASE_USER=
    DATABASE_PASSWORD=
